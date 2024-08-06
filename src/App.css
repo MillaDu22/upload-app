@@ -1,38 +1,139 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap');
+.container-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:90%;
+  padding:5%;
+  min-height:100vh;
+  background-color: black;
+}
+
+.title-form {
+  color:white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-family: 'Ysabeau SC', sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  width:60%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="file"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #333;
+  border: 2px solid #555;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Ysabeau SC', sans-serif;
+  width:90%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #444;
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Ysabeau SC', sans-serif;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  margin:0 auto;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: white;
+}
+
+pre {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  /*overflow-x: auto;*/
+  color: #cccccc;
+}
+
+.container-result {
+  width:75%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 30px;
+  border-radius:10px;
+  background-color: #1e1e1e;
 }
 
-.App-link {
-  color: #61dafb;
+.result {
+  text-transform: capitalize;
+  color:white;
+  font-size: 22px;
+  font-family: 'Ysabeau SC', sans-serif;
+  text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  list-style:circle ;
 }
+
+.element-list {
+  position: relative;
+  margin:0 auto;
+  font-family: 'Ysabeau SC', sans-serif;
+  width:100%;
+  padding:10px;
+  margin-left: -30px;
+}
+
+.name, .url, .optimized-url, .auto-crop-url {
+  color:white;
+  font-size:20px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.link{
+  width:100%;
+  overflow-wrap: break-word;
+  color:aqua;
+}
+

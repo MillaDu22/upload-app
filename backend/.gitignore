@@ -1,0 +1,5 @@
+# Masquer les fichiers .env
+.env
+
+# Masquer le dossier node_modules
+node_modules/
