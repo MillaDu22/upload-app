@@ -86,6 +86,8 @@ pre {
   color: #cccccc;
 }
 
+/*Section resul*/
+
 .container-result {
   width:75%;
   padding: 5%;
@@ -93,7 +95,8 @@ pre {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 120px;
+  margin-bottom: 0px;
   border-radius:10px;
   background-color: #1e1e1e;
 }
@@ -110,18 +113,23 @@ pre {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   width:100%;
-  list-style:circle ;
+  color:white;
+  list-style:decimal;
 }
 
 .element-list {
+  text-align: left;
   position: relative;
   margin:0 auto;
   font-family: 'Ysabeau SC', sans-serif;
-  width:100%;
-  padding:10px;
+  width:96%;
+  padding:2%;
   margin-left: -30px;
+}
+.element-list img {
+  object-fit: cover;
 }
 
 .name, .url, .optimized-url, .auto-crop-url {
@@ -131,9 +139,98 @@ pre {
   text-align: left;
 }
 
+
 .link{
   width:100%;
   overflow-wrap: break-word;
   color:aqua;
+}
+
+/*List Uploaded*/
+
+.container-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 5%;
+  background-color: black;
+  width:78%;
+}
+
+.images-list {
+  width:100%;
+  background-color: #1e1e1e;
+  padding:40px;
+  border-radius:10px;
+  object-fit: cover;
+}
+
+#getall-section {
+  color:white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-family: 'Ysabeau SC', sans-serif;
+  font-size: 30px;
+}
+
+
+.image-item {
+  padding: 10px;
+  border-radius: 0px;
+  text-align: left;
+  color:aqua;
+  font-family: 'Ysabeau SC', sans-serif;
+  list-style:decimal;
+  border:1px solid aqua;
+
+}
+.image-item .url{
+  color:aqua;
+  overflow-wrap: break-word;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/*Modale*/
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: aqua;
+  border:1px solid aqua;
+}
+
+.close-button {
+  color: aqua;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: white;
 }
 
