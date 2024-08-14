@@ -7,6 +7,7 @@
   align-items: center;
   text-align: center;
   width:90%;
+  min-width: 320px;
   padding:5%;
   min-height:100vh;
   background-color: black;
@@ -26,6 +27,7 @@ form {
   align-items: center;
   background-color: #1e1e1e;
   width:60%;
+  min-width: 320px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -213,15 +215,22 @@ pre {
 }
 
 .modal-content {
+  width: 30%;
+  height:100px;
   background-color: #1e1e1e;
   padding: 20px;
+  padding-top: 70px;
   border-radius: 10px;
   text-align: center;
   color: aqua;
+  font-size:21px;
   border:1px solid aqua;
 }
 
 .close-button {
+  position: relative;
+  right:10px;
+  top:-40px;
   color: aqua;
   float: right;
   font-size: 24px;
@@ -234,3 +243,10 @@ pre {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .modal-content{
+    width: 60%;
+    height:100px;
+    padding-top: 70px;
+  }
+}

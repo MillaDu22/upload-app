@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  min-width: 320px;
 }
 
 html {
@@ -12,6 +13,7 @@ html {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  min-width: 320px;
 }
 
 body {
@@ -21,5 +23,6 @@ body {
   align-items: center;
   margin: 0 auto;
   background: black;
+  min-width: 320px;
 }
 
