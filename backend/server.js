@@ -20,7 +20,11 @@ cloudinary.config({
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-app.use(cors());
+app.use(cors({
+    origin: '*', // Permet toutes les origines pour tester //
+    methods: ['GET', 'POST', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 app.use(express.json());
 
 app.post('/upload', upload.array('images', 11), async (req, res) => {
