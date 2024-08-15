@@ -83,7 +83,6 @@ app.get('/images', async (req, res) => {
 // Nouvelle route pour supprimer une image //
 app.delete('/images/:publicId', async (req, res) => {
     const { publicId } = req.params;
-
     try {
         const result = await cloudinary.uploader.destroy(publicId);
 
